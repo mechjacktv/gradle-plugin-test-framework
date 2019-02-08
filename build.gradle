@@ -1,0 +1,33 @@
+plugins {
+  id "com.gradle.plugin-publish" version "0.10.1"
+  id "java-gradle-plugin"
+}
+
+repositories {
+  jcenter()
+}
+
+version = "0.1.0"
+group = "tv.mechjack.gradle"
+
+gradlePlugin {
+  plugins {
+    testFrameworkPlugin {
+      id = 'tv.mechjack.gradle.testframework'
+      implementationClass = 'tv.mechjack.gradle.testframework.TestFrameworkPlugin'
+    }
+  }
+}
+
+pluginBundle {
+  website = 'https://github.com/mechjacktv/gradle-test-framework'
+  vcsUrl = 'https://github.com/mechjacktv/gradle-test-framework'
+  description = 'Adds a test framework source set to java projects.'
+  tags = ['test', 'testing']
+
+  plugins {
+    testFrameworkPlugin {
+      displayName = 'Gradle Test Framework plugin'
+    }
+  }
+}
