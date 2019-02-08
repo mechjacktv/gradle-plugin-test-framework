@@ -1,5 +1,7 @@
 # Gradle Test Framework Plugin
 
+[![Travis CI Badge](https://travis-ci.org/mechjacktv/gradle-test-framework.svg?branch=develop)](https://travis-ci.org/mechjacktv/gradle-test-framework)
+
 Adds a test framework source set to java projects.
 
 ## License
