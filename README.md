@@ -4,7 +4,7 @@
 
 Adds a test framework source set to java projects.
 
-## Using the Plugin
+## Installing the Plugin
 
 This plugin is hosted on GitHub and distributed using JitPack. Add the following to your `build.gradle`:
 
@@ -22,6 +22,10 @@ plugins {
     id 'tv.mechjack.gradle.testframework'
 }
 ```
+
+## Using the Plugin
+
+Execute the `initTestFramework` task to create your source directory and put the test framework code you want included in a `jar` artifact along side your main `jar` for consumers to use during testing.
 
 ## License
 
